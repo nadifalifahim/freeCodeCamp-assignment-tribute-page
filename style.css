@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Roboto;
+}
+
+:root{
+    --logo-width: 30px;
+    --grey-color: #eee;
+    --shadow-grey: #666666;
+    --subhead-grey: #888787;
+    --nav-color: #1d1f25;
+    --heading-font-size: 40px;
+    --button-bg: #343742;
+}
+
+
+nav{
+    background-color: var(--nav-color);
+    padding: 11px;
+    box-shadow: 0px 0.5px 8px 1px var(--shadow-grey);
+    position: sticky;
+    top: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-btn {
+    background-color: var(--button-bg);
+    border: none;
+    color: white;
+    padding: 0 20px;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+main{
+    background-color: var(--grey-color);
+    margin: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+header > h1{
+    padding: 20px 0px;
+    font-size: var(--heading-font-size);
+    color: var(--nav-color);
+    text-align: center;
+}
+
+
+#img-div{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+    width: 95%;
+}
+
+#sub-heading {
+    text-decoration: none;
+    color: var(--subhead-grey);
+    font-size: 14px;
+}
+
+#image{
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+#img-caption{
+    padding: 10px;
+    text-align: center;
+}
+
+p, li{
+    font-weight: 400;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 30px;
+    text-align: justify;
+}
+
+#main-content{
+    max-width: 500px;
+}
+
+#main-content > h3 {
+    text-align: center;
+    padding: 40px 0 10px 0;
+}
+
+#content>h3{
+    text-align: center;
+}
+
+#main-content > ul > li{
+    padding: 15px 15px;
+}
+
+#logo-area{
+    padding: 0 0 0 20px;
+}
+
+#Logo-Text{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#btn-style{
+    display: flex;
+    height: 40px;
+    font-size: 20px;
+}
+
+
+#change-view{
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+#sign-up{
+    background-color: rgb(2, 219, 129);
+    color: black;
+    height: 40px;
+}
+
+#follow{
+    padding: 1px 7px;
+    font-size: 11px;
+    background-color: #3e4250;
+    border-radius: 2px;
+}
+
+button{
+    font-size: 16px;
+}
+
+#preview-btn{
+    padding-right: 3px;
+}
+
+#preview-btn, #fav-btn{
+    font-size: 18px;
+}
+
+#love-btn{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 500px){
+    :root{
+        --heading-font-size: 30px;
+    }
+    body{
+        font-size: 15px;
+        max-width: 100%;
+    }
+    #love-btn{
+        display: none;
+    }
+    #change-view-text{
+        display: none;
+    }
+    #Logo-Text{
+        font-size: 1.2em;
+    }
+    button {
+        font-size: 12px;
+    }
+    .nav-btn {
+        padding: 0 8px;
+        border-radius: 3px;
+        margin: 0 2px;
+    }
+    #sub-heading {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 360px){
+    button {
+        font-size: 10px;
+    }
+    main{
+        margin: 0px 0px;
+    }
+    #img-div{
+        width: 90%;
+        
+    }
+}
+
+
+
+
